@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {Link, NavLink ,useLocation} from 'react-router-dom'
+import axios from 'axios'
 
 export default function Header() {
     // const[login,setLogin]=useState("Log in")
@@ -11,12 +12,25 @@ export default function Header() {
     if(!login){
         login="Log in"
     }
-    function logOut(){
+     async function logOut(){
+        try {
+
+            axios.post(
+                "http://localhost:8000/api/v1/users/logout",
+            )
+            .then(res => {
+                console.log(res);
+            })
+            
+        } catch (error) {
+            console.log("error occure while loguting user");
+        }
         // const UserStatus={
         //     lgn:"Log in"
         //   }
         //     // navigate('/',{ state: { UserStatus } });
         //     isActive=false;
+
         setIsActive(!isActive)
         console.log("User Lougout Successfully");
        
@@ -39,7 +53,7 @@ export default function Header() {
                         >
                             {login}
                         </Link>):(<Link
-                            to="/Login"
+                            to="/Login" 
                             className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             {login}
