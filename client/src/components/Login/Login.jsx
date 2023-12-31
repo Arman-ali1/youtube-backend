@@ -1,9 +1,16 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
+  // const userData = {
+  //   name: 'John Doe',
+  //   email: 'john@example.com',
+  //   // Additional user details
+  // };
+
+  const navigate = useNavigate();
   const[email,setemail]=useState("")
   const [password, setPassword] = useState("")
   const submit=async()=>{
@@ -21,6 +28,16 @@ function Login() {
          console.log(res.data.data.user.fullName);
          console.log(res.data.data.user.email);
          console.log(res.data.data.user.username);
+          console.log(res.data.data.user.avatar);
+         const userData={
+            id:res.data.data.user._id,
+            fullName:res.data.data.user.fullName,
+            email:res.data.data.user.email,
+            username:res.data.data.user.username,
+            avatar:res.data.data.user.avatar
+         }
+         navigate('/UserDetail',{ state: { userData } });
+
       })
       .catch(e => {
         console.log(e.response.data);
