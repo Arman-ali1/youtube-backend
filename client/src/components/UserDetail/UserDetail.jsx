@@ -10,19 +10,25 @@ export default function UserDetail() {
     const userData = location.state?.userData || {};
     console.log(userData);
     console.log(userData.avatar);
+    let image="https://pixy.org/src/31/315160.png"
     // const[fullName,setFullName]=useState("demo");
     // const[email,setEmail]=useState("demo@gmail.com");
     // const[username,setUsername]=useState("demo");
     // const[avatar,setAvatar]=useState("https://pixy.org/src/31/315160.png")
+    image=userData.avatar;
+    if(!image){
+        image="https://pixy.org/src/31/315160.png"
+    }
 
   return (
    
     <>
-    <div className='flex justify-between items-center flex-row'>
-    <div className='h-fit w-1/2 flex justify-between items-center h-32 border border-gray-300 rounded-lg ' >
-    <img src={userData.avatar} alt="User" className='rounded-full'/>
+    <div className='flex justify-between flex-row '>
+    <div className=' w-1/2 flex justify-between items-center border border-gray-300 rounded-lg ' >
+    <img src={image} alt="User" className='rounded-full '/>
     </div>
-    <div className="w-1/2 border-t border-gray-200 px-4 py-5 sm:p-0 border border-gray-300">
+    <div className="w-1/2 border-gray-200 sm:p-0 border border-gray-300 flex  items-center flex-col">
+    <h1 className="block w-full px-4 py-2.5 text-sm font-medium text-white bg-gray-700 hover:bg-blue-800 focus:outline-none focus:bg-blue-800 focus:ring-2 focus:ring-blue-300 rounded-lg flex justify-center items-center">User Detail</h1>
         <dl className="sm:divide-y sm:divide-gray-200">
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
