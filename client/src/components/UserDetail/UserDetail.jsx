@@ -19,10 +19,10 @@ export default function UserDetail() {
    
     <>
     <div className='flex justify-between items-center flex-row'>
-    <div className='h-fit w-1/2 flex justify-between items-center h-32 border border-gray-300 ' >
-    <img src={userData.avatar} alt="User" />
+    <div className='h-fit w-1/2 flex justify-between items-center h-32 border border-gray-300 rounded-lg ' >
+    <img src={userData.avatar} alt="User" className='rounded-full'/>
     </div>
-    <div className="w-1/2 border-t border-gray-200 px-4 py-5 sm:p-0">
+    <div className="w-1/2 border-t border-gray-200 px-4 py-5 sm:p-0 border border-gray-300">
         <dl className="sm:divide-y sm:divide-gray-200">
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
