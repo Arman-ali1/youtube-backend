@@ -29,14 +29,18 @@ function Login() {
          console.log(res.data.data.user.email);
          console.log(res.data.data.user.username);
           console.log(res.data.data.user.avatar);
-         const userData={
-            id:res.data.data.user._id,
-            fullName:res.data.data.user.fullName,
-            email:res.data.data.user.email,
-            username:res.data.data.user.username,
-            avatar:res.data.data.user.avatar
-         }
-         navigate('/UserDetail',{ state: { userData } });
+        //  const userData={
+        //     id:res.data.data.user._id,
+        //     fullName:res.data.data.user.fullName,
+        //     email:res.data.data.user.email,
+        //     username:res.data.data.user.username,
+        //     avatar:res.data.data.user.avatar
+        //  }
+        //  navigate('/UserDetail',{ state: { userData } });
+        const UserStatus={
+          lgn:"Log Out"
+        }
+          navigate('/',{ state: { UserStatus } });
 
       })
       .catch(e => {
