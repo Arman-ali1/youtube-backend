@@ -13,6 +13,7 @@ import Register from './components/Register/Register.jsx'
 
 import Login from './components/Login/Login.jsx'
 import UserDetail from './components/UserDetail/UserDetail.jsx'
+import UserData from './components/UserDetail/UserData.jsx'
 // import UserDetail from './components/UserDetail/UserDetail.jsx'
 
 
@@ -48,6 +49,7 @@ const router = createBrowserRouter(
       <Route path='Login' element={<Login />} />
       <Route path='Register' element={<Register />} />
       <Route path='UserDetail' element={ <UserDetail /> }/>
+      <Route path='UserData' element={ <UserData /> }/>
       {/* <Route path='UserDetail' element={<UserDetail />}/> */}
       <Route 
       loader={githubInfoLoader}

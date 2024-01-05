@@ -13,6 +13,7 @@ function Login() {
   const navigate = useNavigate();
   const[email,setemail]=useState("")
   const [password, setPassword] = useState("")
+  axios.defaults.withCredentials=true;
   const submit=async()=>{
     console.log(email+" "+ password)
     try {
@@ -23,12 +24,12 @@ function Login() {
       )
       .then(res => {
          console.log(res);
-         console.log(res.data);
-         console.log(res.data.data.user._id);
-         console.log(res.data.data.user.fullName);
-         console.log(res.data.data.user.email);
-         console.log(res.data.data.user.username);
-          console.log(res.data.data.user.avatar);
+        //  console.log(res.data);
+        //  console.log(res.data.data.user._id);
+        //  console.log(res.data.data.user.fullName);
+        //  console.log(res.data.data.user.email);
+        //  console.log(res.data.data.user.username);
+        //   console.log(res.data.data.user.avatar);
         //  const userData={
         //     id:res.data.data.user._id,
         //     fullName:res.data.data.user.fullName,
@@ -40,7 +41,7 @@ function Login() {
         const UserStatus={
           lgn:"Log Out"
         }
-          navigate('/',{ state: { UserStatus } });
+          navigate('/UserData',{ state: { UserStatus } });
 
       })
       .catch(e => {

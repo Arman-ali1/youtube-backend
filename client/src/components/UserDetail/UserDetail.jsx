@@ -56,8 +56,8 @@ export default function UserDetail() {
     <div className=' w-1/2 flex justify-between items-center border border-gray-300 rounded-lg ' >
     <img src={avatar} alt="User" className='rounded-full '/>
     </div>
-    <div className="w-1/2 border-gray-200 sm:p-0 border border-gray-300 flex  items-center flex-col">
-    <h1 className="block w-full px-4 py-2.5 text-sm font-medium text-white bg-gray-700 hover:bg-blue-800 focus:outline-none focus:bg-blue-800 focus:ring-2 focus:ring-blue-300 rounded-lg flex justify-center items-center">User Detail</h1>
+    <div className="w-1/2  sm:p-0 border border-gray-300 flex  items-center flex-col">
+    <h1 className=" w-full px-4 py-2.5 text-sm font-medium text-white bg-gray-700 hover:bg-blue-800 focus:outline-none focus:bg-blue-800 focus:ring-2 focus:ring-blue-300 rounded-lg flex justify-center items-center">User Detail</h1>
         <dl className="sm:divide-y sm:divide-gray-200">
             <div className="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                 <dt className="text-sm font-medium text-gray-500">
