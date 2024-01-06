@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { 
+    home,
     loginUser, 
     logoutUser, 
     registerUser, 
@@ -17,6 +18,8 @@ import { verifyJWT } from "../middlewares/auth.middleware.js";
 
 
 const router = Router()
+
+router.route("/").get(home)
 
 router.route("/register").post(
     upload.fields([

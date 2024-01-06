@@ -24,6 +24,10 @@ const generateAccessAndRefereshTokens = async(userId) =>{
     }
 }
 
+const home= function(req,res){
+    res.status(200).send("welcome to my server..............")
+}
+
 const registerUser = asyncHandler( async (req, res) => {
     // get user details from frontend
     // validation - not empty
@@ -487,6 +491,7 @@ const getWatchHistory = asyncHandler(async(req, res) => {
 
 
 export {
+    home,
     registerUser,
     loginUser,
     logoutUser,
