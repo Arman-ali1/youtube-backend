@@ -26,7 +26,7 @@ export default function UserDetail() {
 
         try {
             axios.get(
-                "http://localhost:8000/api/v1/users/current-user",
+                "/api/v1/users/current-user",
             )
             .then(res => {  
                 console.log(res);

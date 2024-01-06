@@ -19,7 +19,7 @@ function Login() {
     try {
 
       axios.post(
-      "http://localhost:8000/api/v1/users/login",
+      "/api/v1/users/login",
       {email,password}
       )
       .then(res => {

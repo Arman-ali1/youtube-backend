@@ -71,7 +71,7 @@ export default function Register (){
             console.log("Start submitting22 ");
             console.log("image pattttttttttthhhh",avatar);
             console.log(formData);
-            await axios.post("http://localhost:8000/api/v1/users/register",formData,{
+            await axios.post("/api/v1/users/register",formData,{
                 username,email,fullName,password
             }).then(res=>{
                 console.log("responce  "+res.data);
