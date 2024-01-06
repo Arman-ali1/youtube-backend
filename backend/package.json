@@ -1,7 +1,7 @@
 {
-  "name": "chai-backend",
+  "name": "youtobe-backend",
   "version": "1.0.0",
-  "description": "a backend at chai aur code channel - youtube",
+  "description": "a backend at project",
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -13,9 +13,9 @@
   "keywords": [
     "javascript",
     "backend",
-    "chai"
+    "arman"
   ],
-  "author": "Hitesh Choudhary",
+  "author": "Arman Ali",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1",
