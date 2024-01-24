@@ -71,10 +71,11 @@ export default function Register (){
             console.log("Start submitting22 ");
             console.log("image pattttttttttthhhh",avatar);
             console.log(formData);
-            await axios.post("https://youtube-backend-yci0.onrender.com/v1/users/register",formData,{
+            await axios.post("https://youtube-backend-yci0.onrender.com/api/v1/users/register",formData,{
                 username,email,fullName,password
             }).then(res=>{
                 console.log("responce  "+res.data);
+                alert("User Registered Succesfully")
             }).catch(e=>{
                 console.log(e);
             })

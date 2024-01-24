@@ -7,7 +7,7 @@ function UserData() {
    async function getdata () {
         try {
             axios.get(
-                "https://youtube-backend-yci0.onrender.com/v1/users/current-user",
+                "https://youtube-backend-yci0.onrender.com/api/v1/users/current-user",
             )
             .then(res => {  
                 console.log(res);
