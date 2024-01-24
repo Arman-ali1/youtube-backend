@@ -14,7 +14,7 @@ import Register from './components/Register/Register.jsx'
 import Login from './components/Login/Login.jsx'
 import UserDetail from './components/UserDetail/UserDetail.jsx'
 import UserData from './components/UserDetail/UserData.jsx'
-import VideoCard from './components/videoCard/videoCard.jsx'
+import VideoCard from './components/videoCard/VideoCard.jsx'
 // import UserDetail from './components/UserDetail/UserDetail.jsx'
 
 
@@ -43,7 +43,7 @@ import VideoCard from './components/videoCard/videoCard.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-      <Route path='' element={<VideoCard />} />
+      <Route path='/' element={<VideoCard />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
