@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import Layout from './Layout.jsx'
-import Home from './components/Home/Home.jsx'
+// import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
@@ -14,6 +14,7 @@ import Register from './components/Register/Register.jsx'
 import Login from './components/Login/Login.jsx'
 import UserDetail from './components/UserDetail/UserDetail.jsx'
 import UserData from './components/UserDetail/UserData.jsx'
+import VideoCard from './components/videoCard/videoCard.jsx'
 // import UserDetail from './components/UserDetail/UserDetail.jsx'
 
 
@@ -42,7 +43,7 @@ import UserData from './components/UserDetail/UserData.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-      <Route path='' element={<Home />} />
+      <Route path='' element={<VideoCard />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />

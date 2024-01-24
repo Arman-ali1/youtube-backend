@@ -16,7 +16,7 @@ export default function Header() {
         try {
 
             axios.post(
-                "http://localhost:8000/api/v1/users/logout",
+                "https://youtube-backend-yci0.onrender.com/v1/users/logout",
             )
             .then(res => {
                 console.log(res);
@@ -45,6 +45,7 @@ export default function Header() {
                             className="mr-3 h-12"
                             alt="Logo"
                         />
+                        Himalaya
                     </Link>
                     <div className="flex items-center lg:order-2">
                         {isActive?(<Link

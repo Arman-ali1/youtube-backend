@@ -26,7 +26,7 @@ export default function UserDetail() {
 
         try {
             axios.get(
-                "/api/v1/users/current-user",
+                "https://youtube-backend-yci0.onrender.com/v1/users/current-user",
             )
             .then(res => {  
                 console.log(res);
