@@ -14,7 +14,7 @@ import Register from './components/Register/Register.jsx'
 import Login from './components/Login/Login.jsx'
 import UserDetail from './components/UserDetail/UserDetail.jsx'
 import UserData from './components/UserDetail/UserData.jsx'
-import VideoCard from './components/videoCard/VideoCard.jsx'
+import VideoCard from './components/VideoCard/VideoCard.jsx'
 // import UserDetail from './components/UserDetail/UserDetail.jsx'
 
 

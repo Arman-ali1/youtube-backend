@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const notecss = {
   "boxSizing": " border-box",
@@ -22,24 +22,24 @@ const notecss = {
   "margin": "10px",
 };
 
-const txtarea={
-  "border": "2px solid #0077ff",
-  "borderRadius": "6px",
-  "readOnly" :"true"
-}
-const editTxtarea={
-  "border": "2px solid red",
-  "borderRadius": "6px",
-}
+// const txtarea={
+//   "border": "2px solid #0077ff",
+//   "borderRadius": "6px",
+//   "readOnly" :"true"
+// }
+// const editTxtarea={
+//   "border": "2px solid red",
+//   "borderRadius": "6px",
+// }
 
 function Video({_id,title ,content,featuredImage}) {
  
-  const noteId = _id;
-  const [id,setId] = useState(noteId);
-  const [noteAuthor,setNoteAuthor] = useState();
-  const [noteTitle,setNoteTitle] = useState(title);
-  const [contentText,setContentText] = useState(content);
-  const [update,setUpdate] = useState(true);
+  // const noteId = _id;
+  // const [id,setId] = useState(noteId);
+  // const [noteAuthor,setNoteAuthor] = useState();
+  // const [noteTitle,setNoteTitle] = useState(title);
+  // const [contentText,setContentText] = useState(content);
+  // const [update,setUpdate] = useState(true);
 
   return (
     <>

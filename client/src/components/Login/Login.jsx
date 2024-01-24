@@ -38,6 +38,7 @@ function Login() {
         //     avatar:res.data.data.user.avatar
         //  }
         //  navigate('/UserDetail',{ state: { userData } });
+        alert("User Login Successfully");
         const UserStatus={
           lgn:"Log Out"
         }
