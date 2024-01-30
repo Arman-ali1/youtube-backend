@@ -6,6 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       // "/api": "https://youtube-backend-yci0.onrender.com",
+      "/api": "http://localhost:8000",
     },
   },
   plugins: [react()],
